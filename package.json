@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "react-static-plugin-sass": "^7.3.0"
+  }
+}
