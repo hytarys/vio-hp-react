@@ -1,0 +1,21 @@
+body {
+  font-family: "Hiragino kaku Gothis ProN", "Hiragino Sans", Meiryo, sans-serif;
+  font-weight: 300;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  &:hover {
+    opacity: .6;
+    transition: opacity .1s;
+    cursor: pointer;
+  }
+}
