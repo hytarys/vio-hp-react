@@ -17,7 +17,3 @@ ReactDOM.render(
   header_target
 )
 
-ReactDOM.render(
-  <Slider />,
-  slider_target
-)
