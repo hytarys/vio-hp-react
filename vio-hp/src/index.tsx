@@ -1,19 +1,37 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
+import { AppContainer } from 'react-hot-loader'
 
 // Your top level component
-import Header from './components/Header'
-import Slider from './components/Slider'
+import Layout from './components/Layout'
 
-// Export your component as JSX (for static rendering)
-export default Header
+// Export your top level component as JSX (for static rendering)
+export default Layout
 
-const header_target = document.getElementById('l-header')
-const slider_target = document.getElementById('p-slider')
+// Render your app
+if (typeof document !== 'undefined') {
+  const target = document.getElementById('root')
 
+  const renderMethod = target.hasChildNodes()
+    ? ReactDOM.hydrate
+    : ReactDOM.render
 
-ReactDOM.render(
-  <Header />,
-  header_target
-)
+  const render = (Comp: Function) => {
+    renderMethod(
+      <AppContainer>
+        <Comp />
+      </AppContainer>,
+      target
+    )
+  }
 
+  // Render!
+  render(Layout)
+
+  // Hot Module Replacement
+  if (module && module.hot) {
+    module.hot.accept('./App', () => {
+      render(Layout)
+    })
+  }
+}
