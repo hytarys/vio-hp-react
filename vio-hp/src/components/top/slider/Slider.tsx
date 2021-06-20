@@ -1,17 +1,17 @@
 import React from 'react'
-import '../html/css/style.css'
+import '../../../html/css/style.css'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/swiper-bundle.css';
 import SwiperCore, { Autoplay, EffectFade } from 'swiper';
 
 SwiperCore.use([Autoplay, EffectFade]);
 
-const slideLogo1 = require('../html/img/slider-top1.png')
-const slideLogo2 = require('../html/img/slider-top2.png')
-const slideLogo3 = require('../html/img/slider-top3.png')
+const slideLogo1 = require('../../../html/img/slider-top1.png')
+const slideLogo2 = require('../../../html/img/slider-top2.png')
+const slideLogo3 = require('../../../html/img/slider-top3.png')
 
 const Slider: React.FC = () => {
-  return <Swiper
+  return<Swiper
   tag="section"
   wrapperTag="ul"
   autoplay={{stopOnLastSlide: true, delay: 1000}}
@@ -19,6 +19,7 @@ const Slider: React.FC = () => {
   speed = {3000}
   allowTouchMove = {false}
   className = 'p-slider-contents'
+  id = 'swiper'
   >
   <SwiperSlide></SwiperSlide>
   <SwiperSlide><img src={slideLogo1} alt=""/></SwiperSlide>
