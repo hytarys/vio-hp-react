@@ -19,7 +19,7 @@ const Slider: React.FC = () => {
   speed = {3000}
   allowTouchMove = {false}
   className = 'p-slider-contents'
-  id = 'swiper'
+  id = 'topSlider'
   >
   <SwiperSlide></SwiperSlide>
   <SwiperSlide><img src={slideLogo1} alt=""/></SwiperSlide>

@@ -1,14 +1,19 @@
-import React from 'react'
+import React, {useEffect, useState} from 'react'
 import '../../../html/css/style.css'
 import {useInView} from 'react-intersection-observer'
 import {ProfileText} from './ProfileText'
+const ProfileTop: React.FC = () => {
 
-export const Profile: React.FC = () => {
-  const sliderHeight = document.getElementById('swiper-container').clientHeight
-  const appearancePosition = sliderHeight/2
+  const [height, changeSliderHeight] = useState(0)
+
+  useEffect(() => {
+    changeSliderHeight(document.getElementById('topSlider').clientHeight)
+  })
+
+
   const {ref, inView} = useInView({
-    rootMargin: `${appearancePosition}px`,
-    triggerOnce: true,
+    root: null,
+    rootMargin: `${height}px`,
   })
   return(
     <section
@@ -24,3 +29,5 @@ export const Profile: React.FC = () => {
     </section>
   )
 }
+
+export default ProfileTop
