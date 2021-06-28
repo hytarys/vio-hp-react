@@ -6,11 +6,11 @@ import SwiperCore, { Autoplay, EffectFade } from 'swiper';
 
 SwiperCore.use([Autoplay, EffectFade]);
 
-const slideLogo1 = require('../../../html/img/slider-top1.png')
-const slideLogo2 = require('../../../html/img/slider-top2.png')
-const slideLogo3 = require('../../../html/img/slider-top3.png')
-
 const Slider: React.FC = () => {
+  const slideLogo1 = require('../../../html/img/slider-top1.jpg')
+  const slideLogo2 = require('../../../html/img/slider-top2.jpg')
+  const slideLogo3 = require('../../../html/img/slider-top3.jpg')
+  const slideLogo4 = require('../../../html/img/slider-top4.jpg')
   return<Swiper
   tag="section"
   wrapperTag="ul"
@@ -25,6 +25,7 @@ const Slider: React.FC = () => {
   <SwiperSlide><img src={slideLogo1} alt=""/></SwiperSlide>
   <SwiperSlide><img src={slideLogo2} alt="" /></SwiperSlide>
   <SwiperSlide><img src={slideLogo3} alt="" /></SwiperSlide>
+  <SwiperSlide><img src={slideLogo4} alt="" /></SwiperSlide>
 </Swiper>
 }
 export default Slider

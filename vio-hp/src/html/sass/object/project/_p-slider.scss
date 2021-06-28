@@ -8,8 +8,10 @@
 }
 
 .p-slider-contents {
+  position: absolute;
   img {
     width: 100%;
     opacity: 1;
+    z-index: 20;
   }
 }

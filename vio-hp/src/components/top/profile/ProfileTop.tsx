@@ -1,31 +1,43 @@
-import React, {useEffect, useState} from 'react'
+import React,{ useEffect, useState} from 'react'
 import '../../../html/css/style.css'
-import {useInView} from 'react-intersection-observer'
 import {ProfileText} from './ProfileText'
+import { ProfileImage } from './ProfileImage'
+
+const scrollAmount = ():number => {
+  return Math.max(window.pageYOffset, document.documentElement.scrollTop, document.body.scrollTop);
+}
+
 const ProfileTop: React.FC = () => {
 
-  const [height, changeSliderHeight] = useState(0)
+  // スクロールが20pxを超えたら発現する処理
+  const[isTop, setIsTop] = useState<boolean>(true);
+
+  const onScroll = ():void => {
+    const position = scrollAmount();
+
+    if(position >= 20) {
+      setIsTop(true);
+    } else {
+      setIsTop(false);
+    }
+  }
 
   useEffect(() => {
-    changeSliderHeight(document.getElementById('topSlider').clientHeight)
+    document.addEventListener('scroll', onScroll);
+    return ():void => document.removeEventListener('scroll', onScroll)
   })
 
+  const scrollStyle: React.CSSProperties = isTop
+  ? {display:'flex'}
+  : {display: 'none'}
 
-  const {ref, inView} = useInView({
-    root: null,
-    rootMargin: `${height}px`,
-  })
   return(
     <section
-    ref={ref}
-    className='p-profile'
+    className='p-profile-top'
+    style={scrollStyle}
     >
-      {inView && (
-        <div>
-          <ProfileText />
-        </div>
-      )
-      }
+      <ProfileText />
+      <ProfileImage />
     </section>
   )
 }

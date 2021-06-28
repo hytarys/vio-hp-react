@@ -4,9 +4,7 @@ import Header from './Header'
 import Slider from './top/slider/Slider'
 import ProfileTop from './top/profile/ProfileTop'
 
-
-export default class Layout extends React.Component {
-  render(){
+const Layout: React.FC=() => {
     return(
       <main>
         <Header />
@@ -14,5 +12,6 @@ export default class Layout extends React.Component {
         <ProfileTop />
       </main>
     )
-  }
 }
+
+export default Layout

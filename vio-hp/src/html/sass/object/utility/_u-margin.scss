@@ -1,0 +1,12 @@
+.u-margin {
+  &_right {
+    &_auto {
+      margin-right: auto;
+    }
+  }
+  &_left {
+    &_auto{
+      margin-left: auto;
+    }
+  }
+}
