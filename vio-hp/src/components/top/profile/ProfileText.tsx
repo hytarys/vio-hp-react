@@ -26,8 +26,6 @@ export const ProfileText: React.FC = () => {
         ここにプロフィール概要。ここにプロフィール概要。
         ここにプロフィール概要。ここにプロフィール概要。
         ここにプロフィール概要。ここにプロフィール概要。
-        ここにプロフィール概要。ここにプロフィール概要。
-        ここにプロフィール概要。ここにプロフィール概要。
       </p>
       <div className='p-profile-top-text__button u-text_center'>
         <span className='p-profile-top-text__button_text u-margin_right_auto u-margin_left_auto'>VIEW MORE</span>

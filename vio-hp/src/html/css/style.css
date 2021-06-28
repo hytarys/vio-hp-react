@@ -438,9 +438,8 @@ a:hover {
   background-color: white;
   position: relative;
   border: 2px solid #e9c3c3;
-  border-radius: 120px;
-  padding-top: 64px;
-  padding-bottom: 64px;
+  border-radius: 150px;
+  padding: 96px 0;
   -webkit-animation-name: fadedown;
           animation-name: fadedown;
   -webkit-animation-duration: 4s;
@@ -494,9 +493,9 @@ a:hover {
 }
 
 .p-profile-top-text__text-body {
-  padding: 64px 152px;
+  padding: 64px 120px;
   text-align: center;
-  line-height: 2;
+  line-height: 2.5;
 }
 
 .p-profile-top-text__button_text {
@@ -510,7 +509,7 @@ a:hover {
 
 .p-profile-top-image {
   position: absolute;
-  top: 10%;
+  top: 13%;
   right: 5%;
   width: 50%;
   height: auto;

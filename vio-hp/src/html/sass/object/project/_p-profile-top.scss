@@ -11,9 +11,8 @@
     background-color: white;
     position: relative;
     border: 2px solid $primary-color;
-    border-radius: 120px;
-    padding-top: 64px ;
-    padding-bottom: 64px;
+    border-radius: 150px;
+    padding: 96px 0 ;
     animation-name: fadedown;
     animation-duration: 4s;
     animation-iteration-count: initial;
@@ -45,9 +44,9 @@
       }
     }
     &__text-body {
-      padding: 64px 152px;
+      padding: 64px 120px;
       text-align: center;
-      line-height: 2;
+      line-height: 2.5;
     }
     &__button {
       &_text {
@@ -64,7 +63,7 @@
   // トップページのプロフィールの画像部分
   &-image {
     position: absolute;
-    top: 10%;
+    top: 13%;
     right: 5%;
     width: 50%;
     height: auto;
