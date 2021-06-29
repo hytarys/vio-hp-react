@@ -1,0 +1,33 @@
+.p-news-top {
+  &-wrap{
+    background-color: white;
+    margin: 0 5%;
+    &__box {
+      display: flex;
+      justify-content: space-around;
+      padding: 15vh 0;
+    }
+    &__title {
+      text-align: center;
+      font-weight: 300;
+      font-size: $font-size-title;
+      letter-spacing: 5px;
+      margin: 0;
+      padding-top: 10vh;
+      &_border-bottom {
+        border-bottom: solid 2px $primary-color;
+      }
+    }
+  }
+  &-article {
+    &__image {
+      width: 300px;
+      height: 500px;
+    }
+    &__text {
+      padding-top: 16px;
+      font-weight: 400;
+      font-size: $font-size-xl;
+    }
+  }
+}
