@@ -428,6 +428,7 @@ a:hover {
 .p-profile-top {
   position: relative;
   display: none;
+  height: 100vh;
 }
 
 .p-profile-top-text {
@@ -436,12 +437,11 @@ a:hover {
   left: 5%;
   width: 45%;
   background-color: white;
-  position: relative;
   border: 2px solid #e9c3c3;
   border-radius: 150px;
   padding: 96px 0;
-  -webkit-animation-name: fadedown;
-          animation-name: fadedown;
+  -webkit-animation-name: fade-profile-text-down;
+          animation-name: fade-profile-text-down;
   -webkit-animation-duration: 4s;
           animation-duration: 4s;
   -webkit-animation-iteration-count: initial;
@@ -449,7 +449,7 @@ a:hover {
   z-index: 10;
 }
 
-@-webkit-keyframes fadedown {
+@-webkit-keyframes fade-profile-text-down {
   from {
     opacity: 0;
     -webkit-transform: translateY(-80px);
@@ -462,7 +462,7 @@ a:hover {
   }
 }
 
-@keyframes fadedown {
+@keyframes fade-profile-text-down {
   from {
     opacity: 0;
     -webkit-transform: translateY(-80px);
@@ -516,15 +516,15 @@ a:hover {
   border-radius: 120px;
   z-index: 30;
   border: 2px solid #e9c3c3;
-  -webkit-animation-name: fadeslide;
-          animation-name: fadeslide;
+  -webkit-animation-name: fade-profile-image-slide;
+          animation-name: fade-profile-image-slide;
   -webkit-animation-duration: 4s;
           animation-duration: 4s;
   -webkit-animation-iteration-count: initial;
           animation-iteration-count: initial;
 }
 
-@-webkit-keyframes fadeslide {
+@-webkit-keyframes fade-profile-image-slide {
   from {
     opacity: 0;
     -webkit-transform: translateX(80px);
@@ -537,11 +537,136 @@ a:hover {
   }
 }
 
-@keyframes fadeslide {
+@keyframes fade-profile-image-slide {
   from {
     opacity: 0;
     -webkit-transform: translateX(80px);
             transform: translateX(80px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+}
+
+.p-lesson-top {
+  position: relative;
+  display: none;
+  height: 100vh;
+}
+
+.p-lesson-top-text {
+  position: absolute;
+  top: -40px;
+  right: 5%;
+  width: 45%;
+  background-color: white;
+  border: 2px solid #e9c3c3;
+  border-radius: 150px;
+  padding: 96px 0;
+  -webkit-animation-name: fade-lesson-text-down;
+          animation-name: fade-lesson-text-down;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+  -webkit-animation-iteration-count: initial;
+          animation-iteration-count: initial;
+  z-index: 10;
+}
+
+@-webkit-keyframes fade-lesson-text-down {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(80px);
+            transform: translateY(80px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
+
+@keyframes fade-lesson-text-down {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(80px);
+            transform: translateY(80px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
+
+.p-lesson-top-text:before {
+  content: "";
+  padding-top: 75%;
+}
+
+.p-lesson-top-text__title {
+  text-align: center;
+  font-weight: 300;
+  font-size: 40px;
+  letter-spacing: 5px;
+  margin: 0;
+}
+
+.p-lesson-top-text__title_border-bottom {
+  border-bottom: solid 2px #e9c3c3;
+}
+
+.p-lesson-top-text__text-body {
+  padding: 64px 120px;
+  text-align: center;
+  line-height: 2.5;
+}
+
+.p-lesson-top-text__button_text {
+  color: #e9c3c3;
+  letter-spacing: 5px;
+  font-size: 16px;
+  padding: 16px 32px 16px 32px;
+  border: 2px solid #e9c3c3;
+  border-radius: 10px;
+}
+
+.p-lesson-top-image {
+  position: absolute;
+  top: 13%;
+  left: 5%;
+  width: 50%;
+  height: auto;
+  border-radius: 120px;
+  z-index: 30;
+  border: 2px solid #e9c3c3;
+  -webkit-animation-name: fade-lesson-image-slide;
+          animation-name: fade-lesson-image-slide;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+  -webkit-animation-iteration-count: initial;
+          animation-iteration-count: initial;
+}
+
+@-webkit-keyframes fade-lesson-image-slide {
+  from {
+    opacity: 0;
+    -webkit-transform: translateX(-80px);
+            transform: translateX(-80px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+}
+
+@keyframes fade-lesson-image-slide {
+  from {
+    opacity: 0;
+    -webkit-transform: translateX(-80px);
+            transform: translateX(-80px);
   }
   to {
     opacity: 1;

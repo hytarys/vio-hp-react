@@ -1,28 +1,28 @@
-.p-profile-top {
+.p-lesson-top {
   position: relative;
   display: none;
   height: 100vh;
 
-  // トップページのプロフィールのテキスト部分
+  // トップページのレッスンのテキスト部分
   &-text {
     position: absolute;
     top: -40px;
-    left: 5%;
+    right: 5%;
     width: 45%;
     background-color: white;
     border: 2px solid $primary-color;
     border-radius: 150px;
     padding: 96px 0 ;
-    animation-name: fade-profile-text-down;
+    animation-name: fade-lesson-text-down;
     animation-duration: 4s;
     animation-iteration-count: initial;
     z-index: 10;
 
     // フェードインアニメーション(テキスト部分)
-    @keyframes fade-profile-text-down {
+    @keyframes fade-lesson-text-down {
       from {
         opacity: 0;
-        transform: translateY(-80px);
+        transform: translateY(80px);
       }
       to {
         opacity: 1;
@@ -60,25 +60,26 @@
     }
   }
 
-  // トップページのプロフィールの画像部分
+
+  // トップページのレッスンの画像部分
   &-image {
     position: absolute;
     top: 13%;
-    right: 5%;
+    left: 5%;
     width: 50%;
     height: auto;
     border-radius: 120px;
     z-index: 30;
     border: 2px solid $primary-color;
-    animation-name: fade-profile-image-slide;
+    animation-name: fade-lesson-image-slide;
     animation-duration: 4s;
     animation-iteration-count: initial;
 
     // フェードインアニメーション(画像部分)
-    @keyframes fade-profile-image-slide {
+    @keyframes fade-lesson-image-slide {
       from {
         opacity: 0;
-        transform: translateX(80px);
+        transform: translateX(-80px);
       }
       to {
         opacity: 1;
