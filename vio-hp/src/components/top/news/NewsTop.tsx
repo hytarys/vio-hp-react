@@ -7,7 +7,7 @@ const NewsTop: React.FC = () => {
     <section className='p-news-top'
     >
       <div className='p-news-top-wrap'>
-        <div className='p-news-top-wrap__title '>
+        <div className='p-news-top-wrap__title'>
           <span className='p-news-top-wrap__title_border-bottom u-padding_bottom_lg'>NEWS</span>
         </div>
         <div className='p-news-top-wrap__box'>

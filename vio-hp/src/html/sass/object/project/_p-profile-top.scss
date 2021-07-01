@@ -50,12 +50,16 @@
     }
     &__button {
       &_text {
+        cursor: pointer;
         color: $primary-color;
         letter-spacing: 5px;
         font-size: $font-size-button;
         padding: 16px 32px 16px 32px;
         border: 2px solid $primary-color;
         border-radius: 10px;
+        &:hover {
+          background-color: rgba(173, 163, 163, 0.1);
+        }
       }
     }
   }
