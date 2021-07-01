@@ -835,12 +835,12 @@ body {
   margin-right: 83px;
 }
 
-.p-footer-pc_bg {
-  background-color: white;
-}
-
 .p-footer_copy {
   font-size: 4px !important;
+}
+
+.p-footer_bg {
+  background-color: white;
 }
 
 .u-padding_bottom_lg {
