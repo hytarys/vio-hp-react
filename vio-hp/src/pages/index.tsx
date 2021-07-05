@@ -1,0 +1,18 @@
+import React from "react";
+import '../html/css/style.css';
+import Slider from "components/top/slider/Slider";
+import ProfileTop from "components/top/profile/ProfileTop";
+import LessonTop from "components/top/lesson/LessonTop";
+import NewsTop from "components/top/news/NewsTop";
+import ContactTop from "components/top/contact/ContactTop";
+
+export default() => (
+  <main>
+    <Slider />
+    <ProfileTop />
+    <LessonTop />
+    <NewsTop />
+    <ContactTop />
+  </main>
+)
+
