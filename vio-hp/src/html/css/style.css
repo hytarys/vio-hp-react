@@ -843,6 +843,24 @@ body {
   background-color: white;
 }
 
+.p-page-header {
+  height: 400px;
+  background-color: white;
+}
+
+.p-page-header__title {
+  bottom: 40%;
+  margin: 0 auto;
+  margin-top: 91px;
+}
+
+.p-page-header__title > h2 {
+  margin: 0;
+  font-weight: 200;
+  letter-spacing: 5px;
+  font-size: 56px;
+}
+
 .u-padding_bottom_lg {
   padding-bottom: 24px;
 }
@@ -974,6 +992,12 @@ body {
 .u-flex_jc_sa {
   -ms-flex-pack: distribute;
       justify-content: space-around;
+}
+
+.u-flex_jc_center {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .u-flex_aa_center {

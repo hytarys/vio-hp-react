@@ -24,6 +24,30 @@ export default {
           }),
         })),
       },
+      {
+        path: '/profile',
+        getData: () => ({
+          pageTitle: 'PROFILE'
+        })
+      },
+      {
+        path: '/lesson',
+        getData: () => ({
+          pageTitle: 'LESSON'
+        })
+      },
+      {
+        path: '/news',
+        getData: () => ({
+          pageTitle: 'NEWS'
+        })
+      },
+      {
+        path: '/contact',
+        getData: () => ({
+          pageTitle: 'CONTACT'
+        })
+      }
     ]
   },
   plugins: [

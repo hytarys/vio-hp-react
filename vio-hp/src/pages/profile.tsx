@@ -1,9 +1,10 @@
 import React from 'react'
+import Head from 'components/pages/Head'
 
 const Profile:React.FC = () => {
   return (
     <div>
-      <p>うまくいったぜわっほい</p>
+      <Head />
     </div>
   )
 }
