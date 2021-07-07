@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -859,6 +860,35 @@ body {
   font-weight: 200;
   letter-spacing: 5px;
   font-size: 56px;
+}
+
+.p-profile__image {
+  margin-left: 10%;
+}
+
+.p-profile__text {
+  margin-left: 10%;
+}
+
+.p-profile-image {
+  width: 35%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50px;
+}
+
+.p-profile-text {
+  width: 35%;
+}
+
+.p-profile-text__name {
+  font-family: "ヒラギノ明朝 ProN";
+  font-size: 56px;
+}
+
+.p-profile-text__main {
+  line-height: 3;
+  font-weight: 100;
 }
 
 .u-padding_bottom_lg {
