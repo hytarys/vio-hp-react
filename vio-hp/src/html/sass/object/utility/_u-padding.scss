@@ -1,10 +1,37 @@
-.u-padding {
-  &_bottom {
-    &_lg {
-      padding-bottom: $gutter-lg;
-    }
-    &_xl {
-      padding-bottom: $gutter-xl;
-    }
+.u-pb {
+  &_xl {
+    padding-bottom: $gutter-xl;
+  }
+  &_lg {
+    padding-bottom: $gutter-lg;
+  }
+  &_md {
+    padding-bottom: $gutter-md;
+  }
+  &_sm {
+    padding-bottom: $gutter-xs;
+  }
+  &_xs {
+    padding-bottom: $gutter-xs;
+  }
+}
+
+.u-py {
+  &_lg {
+    padding-top: $gutter-lg;
+    padding-bottom: $gutter-lg;
+  }
+}
+
+.u-pt {
+  &_lg {
+    padding-top: $gutter-lg;
+  }
+}
+
+.u-px {
+  &_section {
+    padding-left: 10%;
+    padding-right: 10%;
   }
 }

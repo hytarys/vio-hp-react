@@ -7,7 +7,7 @@ export const ProfileText: React.FC = () => {
   return(
     <div className='p-profile-top-text'>
       <h2 className='p-profile-top-text__title'>
-        <span className='p-profile-top-text__title_border-bottom u-padding_bottom_lg'>PROFILE</span>
+        <span className='p-profile-top-text__title_border-bottom u-pb_lg'>PROFILE</span>
       </h2>
       <p className='p-profile-top-text__text-body u-margin_right_auto u-margin_left_auto'>
         ここにプロフィール概要。ここにプロフィール概要。

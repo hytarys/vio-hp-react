@@ -3,9 +3,9 @@ import '../../../html/css/style.css';
 
 export const ContactForm: React.FC = () => {
   return (
-    <div className='p-contact-top-form u-mt_xxl  u-margin_right_auto u-margin_left_auto u-padding_bottom_xl'>
+    <div className='p-contact-top-form u-mt_xxl  u-margin_right_auto u-margin_left_auto u-pb_xl'>
       <form
-      className='p-contact-top-form-main u-text_center u-padding_bottom_xl'
+      className='p-contact-top-form-main u-text_center u-pb_xl'
       action="#">
           <input className='p-contact-top-form-main__textbox p-contact-top-form-main__textbox_sm u-mb_xl'
           type="text" placeholder='お名前'

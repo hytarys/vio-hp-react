@@ -8,7 +8,7 @@ const NewsTop: React.FC = () => {
     >
       <div className='p-news-top-wrap'>
         <div className='p-news-top-wrap__title'>
-          <span className='p-news-top-wrap__title_border-bottom u-padding_bottom_lg'>NEWS</span>
+          <span className='p-news-top-wrap__title_border-bottom u-pb_lg'>NEWS</span>
         </div>
         <div className='p-news-top-wrap__box'>
           <NewsArticle />

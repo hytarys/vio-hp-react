@@ -24,3 +24,26 @@
     font-weight: 100;
   }
 }
+
+.p-profile-contact {
+  width: 100%;
+  height: 400px;
+  background-color: white;
+}
+
+.p-profile__contact {
+  padding: 0 20%;
+  font-size: 24px;
+  letter-spacing: 5px;
+}
+
+.p-profile-contact__button {
+  width: 100%;
+  border: 1px solid $primary-color;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.p-profile-contact__text {
+  color: $primary-color;
+}

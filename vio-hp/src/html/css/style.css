@@ -891,12 +891,77 @@ body {
   font-weight: 100;
 }
 
-.u-padding_bottom_lg {
+.p-profile-contact {
+  width: 100%;
+  height: 400px;
+  background-color: white;
+}
+
+.p-profile__contact {
+  padding: 0 20%;
+  font-size: 24px;
+  letter-spacing: 5px;
+}
+
+.p-profile-contact__button {
+  width: 100%;
+  border: 1px solid #e9c3c3;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.p-profile-contact__text {
+  color: #e9c3c3;
+}
+
+.p-lesson-strength__text {
+  margin-left: 10%;
+}
+
+.p-lesson-strength__img {
+  margin-left: 5%;
+}
+
+.p-lesson-strength-text__main {
+  line-height: 2.5;
+}
+
+.p-lesson-strength-text__title {
+  border-bottom: 2px solid #e9c3c3;
+}
+
+.u-pb_xl {
+  padding-bottom: 40px;
+}
+
+.u-pb_lg {
   padding-bottom: 24px;
 }
 
-.u-padding_bottom_xl {
-  padding-bottom: 40px;
+.u-pb_md {
+  padding-bottom: 16px;
+}
+
+.u-pb_sm {
+  padding-bottom: 8px;
+}
+
+.u-pb_xs {
+  padding-bottom: 8px;
+}
+
+.u-py_lg {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.u-pt_lg {
+  padding-top: 24px;
+}
+
+.u-px_section {
+  padding-left: 10%;
+  padding-right: 10%;
 }
 
 .u-margin_right_auto {
