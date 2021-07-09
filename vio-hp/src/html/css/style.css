@@ -914,8 +914,19 @@ body {
   color: #e9c3c3;
 }
 
+.p-lesson-contact {
+  margin-left: calc(((100vw - 100%) / 2) * -1);
+  margin-right: calc(((100vw - 100%) / 2) * -1);
+  height: 400px;
+  background-color: white;
+}
+
 .p-lesson-strength__text {
   margin-left: 10%;
+}
+
+.p-lesson-strength__text_right {
+  margin-right: 10%;
 }
 
 .p-lesson-strength__img {
@@ -927,7 +938,62 @@ body {
 }
 
 .p-lesson-strength-text__title {
+  border-bottom: 1px solid #e9c3c3;
+  font-size: 32px;
+  font-weight: 200;
+  letter-spacing: 3px;
+}
+
+.p-lesson-strength-contents {
+  margin-top: 144px;
+}
+
+.p-lesson__title {
+  font-size: 32px;
+  letter-spacing: 5px;
   border-bottom: 2px solid #e9c3c3;
+}
+
+.p-lesson-strength__title-box {
+  margin-bottom: 104px;
+}
+
+.p-lesson-course {
+  width: 280px;
+}
+
+.p-lesson__course {
+  margin-top: 200px;
+  margin-bottom: 200px;
+}
+
+.p-lesson-course__img {
+  width: 280px;
+  height: 400px;
+}
+
+.p-lesson__title-box {
+  margin-bottom: 144px;
+}
+
+.u-pt_xl {
+  padding-top: 40px;
+}
+
+.u-pt_lg {
+  padding-top: 24px;
+}
+
+.u-pt_md {
+  padding-top: 16px;
+}
+
+.u-pt_sm {
+  padding-top: 8px;
+}
+
+.u-pt_xs {
+  padding-top: 8px;
 }
 
 .u-pb_xl {
@@ -970,6 +1036,10 @@ body {
 
 .u-margin_left_auto {
   margin-left: auto;
+}
+
+.u-margin_center {
+  margin: 0 auto;
 }
 
 .u-mt_xxl {

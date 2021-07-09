@@ -1,12 +1,16 @@
 import React from "react";
 import '../../html/css/style.css'
-import LessonStrengthPoint from "./LessonStrengthPoint";
+import LessonStrength from "./LessonStrength";
+import LessonCourse from "./LessonCourse";
+import LessonContact from "./LessonContact";
 
 const Lesson:React.FC = () => {
   return(
-    <div>
-      <LessonStrengthPoint />
-    </div>
+    <main className="u-px_section">
+      <LessonStrength />
+      <LessonCourse />
+      <LessonContact />
+    </main>
   )
 }
 

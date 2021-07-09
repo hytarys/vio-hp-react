@@ -4,8 +4,8 @@ import { Link } from "@reach/router";
 
 const ProfileContactButton:React.FC = () => {
   return (
-    <Link to="/contact" className="p-profile-contact__button u-text_center u-py_lg">
-      <div  className="p-profile-contact__text">CONTACT</div>
+    <Link to="/contact" className="p-profile-contact__text">
+      <div  className="p-profile-contact__button u-text_center u-py_lg ">CONTACT</div>
     </Link>
   )
 }
