@@ -5,19 +5,20 @@
 
   // トップページのレッスンのテキスト部分
   &-text {
-    position: absolute;
-    top: -40px;
-    right: 5%;
-    width: 45%;
-    background-color: white;
-    border: 2px solid $primary-color;
-    border-radius: 150px;
-    padding: 96px 0 ;
-    animation-name: fade-lesson-text-down;
-    animation-duration: 4s;
-    animation-iteration-count: initial;
-    z-index: 10;
-
+    @include screen-pc {
+      position: absolute;
+      top: -40px;
+      right: 5%;
+      width: 45%;
+      background-color: white;
+      border: 2px solid $primary-color;
+      border-radius: 150px;
+      padding: 96px 0 ;
+      animation-name: fade-lesson-text-down;
+      animation-duration: 4s;
+      animation-iteration-count: initial;
+      z-index: 10;
+    }
     // フェードインアニメーション(テキスト部分)
     @keyframes fade-lesson-text-down {
       from {

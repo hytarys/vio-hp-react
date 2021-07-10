@@ -30,5 +30,8 @@
         }
       }
     }
+    @include screen-sp {
+      display: none;
+    }
   }
 }

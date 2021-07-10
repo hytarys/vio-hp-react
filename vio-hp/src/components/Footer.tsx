@@ -17,10 +17,10 @@ const Footer: React.FC = () => {
           </div>
         </div>
         <div className='p-footer-pc-menu p-footer-pc__menu'>
-          <Link to='#' className='p-footer-pc-menu__single'>Profile</Link>
-          <Link to='#' className='p-footer-pc-menu__single'>Lesson</Link>
-          <Link to='#' className='p-footer-pc-menu__single'>News</Link>
-          <Link to='#' className='p-footer-pc-menu__single'>Contact</Link>
+          <Link to='/' className='p-footer-pc-menu__single'>Top</Link>
+          <Link to='/profile' className='p-footer-pc-menu__single'>Profile</Link>
+          <Link to='/lesson' className='p-footer-pc-menu__single'>Lesson</Link>
+          <Link to='/lesson' className='p-footer-pc-menu__single'>Contact</Link>
         </div>
       </div>
       <div className="u-text_center u-mb_md"><span className="p-footer_copy">©️HinakoFuchino.co</span></div>
