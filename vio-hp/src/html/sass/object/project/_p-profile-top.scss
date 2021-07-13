@@ -5,18 +5,20 @@
 
   // トップページのプロフィールのテキスト部分
   &-text {
-    position: absolute;
-    top: -40px;
-    left: 5%;
-    width: 45%;
-    background-color: white;
-    border: 2px solid $primary-color;
-    border-radius: 150px;
-    padding: 96px 0 ;
-    animation-name: fade-profile-text-down;
-    animation-duration: 4s;
-    animation-iteration-count: initial;
-    z-index: 10;
+    @include screen-pc {
+      position: absolute;
+      top: -40px;
+      left: 5%;
+      width: 45%;
+      background-color: white;
+      border: 2px solid $primary-color;
+      border-radius: 150px;
+      padding: 96px 0 ;
+      animation-name: fade-profile-text-down;
+      animation-duration: 4s;
+      animation-iteration-count: initial;
+      z-index: 10;
+    }
 
     // フェードインアニメーション(テキスト部分)
     @keyframes fade-profile-text-down {
@@ -66,17 +68,22 @@
 
   // トップページのプロフィールの画像部分
   &-image {
-    position: absolute;
-    top: 13%;
-    right: 5%;
-    width: 50%;
-    height: auto;
-    border-radius: 120px;
-    z-index: 30;
-    border: 2px solid $primary-color;
-    animation-name: fade-profile-image-slide;
-    animation-duration: 4s;
-    animation-iteration-count: initial;
+    @include screen-pc {
+      position: absolute;
+      top: 13%;
+      right: 5%;
+      width: 50%;
+      height: auto;
+      border-radius: 120px;
+      z-index: 30;
+      border: 2px solid $primary-color;
+      animation-name: fade-profile-image-slide;
+      animation-duration: 4s;
+      animation-iteration-count: initial;
+    }
+    @include screen-sp {
+      display: none;
+    }
 
     // フェードインアニメーション(画像部分)
     @keyframes fade-profile-image-slide {

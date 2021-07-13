@@ -92,3 +92,26 @@
     margin-left: $gutter-xs;
   }
 }
+
+.u-mx {
+  &_xl {
+    margin-right: $gutter-xl;
+    margin-left: $gutter-xl;
+  }
+  &_lg {
+    margin-right: $gutter-lg;
+    margin-left: $gutter-lg;
+  }
+  &_md {
+    margin-right: $gutter-md;
+    margin-left: $gutter-md;
+  }
+  &_sm {
+    margin-right: $gutter-sm;
+    margin-left: $gutter-sm;
+  }
+  &_xs {
+    margin-right: $gutter-xs;
+    margin-left: $gutter-xs;
+  }
+}

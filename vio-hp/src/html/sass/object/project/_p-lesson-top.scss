@@ -68,17 +68,22 @@
 
   // トップページのレッスンの画像部分
   &-image {
-    position: absolute;
-    top: 13%;
-    left: 5%;
-    width: 50%;
-    height: auto;
-    border-radius: 120px;
-    z-index: 30;
-    border: 2px solid $primary-color;
-    animation-name: fade-lesson-image-slide;
-    animation-duration: 4s;
-    animation-iteration-count: initial;
+    @include screen-pc {
+      position: absolute;
+      top: 13%;
+      left: 5%;
+      width: 50%;
+      height: auto;
+      border-radius: 120px;
+      z-index: 30;
+      border: 2px solid $primary-color;
+      animation-name: fade-lesson-image-slide;
+      animation-duration: 4s;
+      animation-iteration-count: initial;
+    }
+    @include screen-sp {
+      display: none;
+    }
 
     // フェードインアニメーション(画像部分)
     @keyframes fade-lesson-image-slide {

@@ -442,22 +442,24 @@ body {
   height: 100vh;
 }
 
-.p-profile-top-text {
-  position: absolute;
-  top: -40px;
-  left: 5%;
-  width: 45%;
-  background-color: white;
-  border: 2px solid #e9c3c3;
-  border-radius: 150px;
-  padding: 96px 0;
-  -webkit-animation-name: fade-profile-text-down;
-          animation-name: fade-profile-text-down;
-  -webkit-animation-duration: 4s;
-          animation-duration: 4s;
-  -webkit-animation-iteration-count: initial;
-          animation-iteration-count: initial;
-  z-index: 10;
+@media screen and (min-width: 960px) {
+  .p-profile-top-text {
+    position: absolute;
+    top: -40px;
+    left: 5%;
+    width: 45%;
+    background-color: white;
+    border: 2px solid #e9c3c3;
+    border-radius: 150px;
+    padding: 96px 0;
+    -webkit-animation-name: fade-profile-text-down;
+            animation-name: fade-profile-text-down;
+    -webkit-animation-duration: 4s;
+            animation-duration: 4s;
+    -webkit-animation-iteration-count: initial;
+            animation-iteration-count: initial;
+    z-index: 10;
+  }
 }
 
 @-webkit-keyframes fade-profile-text-down {
@@ -523,21 +525,29 @@ body {
   background-color: rgba(173, 163, 163, 0.1);
 }
 
-.p-profile-top-image {
-  position: absolute;
-  top: 13%;
-  right: 5%;
-  width: 50%;
-  height: auto;
-  border-radius: 120px;
-  z-index: 30;
-  border: 2px solid #e9c3c3;
-  -webkit-animation-name: fade-profile-image-slide;
-          animation-name: fade-profile-image-slide;
-  -webkit-animation-duration: 4s;
-          animation-duration: 4s;
-  -webkit-animation-iteration-count: initial;
-          animation-iteration-count: initial;
+@media screen and (min-width: 960px) {
+  .p-profile-top-image {
+    position: absolute;
+    top: 13%;
+    right: 5%;
+    width: 50%;
+    height: auto;
+    border-radius: 120px;
+    z-index: 30;
+    border: 2px solid #e9c3c3;
+    -webkit-animation-name: fade-profile-image-slide;
+            animation-name: fade-profile-image-slide;
+    -webkit-animation-duration: 4s;
+            animation-duration: 4s;
+    -webkit-animation-iteration-count: initial;
+            animation-iteration-count: initial;
+  }
+}
+
+@media screen and (max-width: 959px) {
+  .p-profile-top-image {
+    display: none;
+  }
 }
 
 @-webkit-keyframes fade-profile-image-slide {
@@ -655,21 +665,29 @@ body {
   background-color: rgba(173, 163, 163, 0.1);
 }
 
-.p-lesson-top-image {
-  position: absolute;
-  top: 13%;
-  left: 5%;
-  width: 50%;
-  height: auto;
-  border-radius: 120px;
-  z-index: 30;
-  border: 2px solid #e9c3c3;
-  -webkit-animation-name: fade-lesson-image-slide;
-          animation-name: fade-lesson-image-slide;
-  -webkit-animation-duration: 4s;
-          animation-duration: 4s;
-  -webkit-animation-iteration-count: initial;
-          animation-iteration-count: initial;
+@media screen and (min-width: 960px) {
+  .p-lesson-top-image {
+    position: absolute;
+    top: 13%;
+    left: 5%;
+    width: 50%;
+    height: auto;
+    border-radius: 120px;
+    z-index: 30;
+    border: 2px solid #e9c3c3;
+    -webkit-animation-name: fade-lesson-image-slide;
+            animation-name: fade-lesson-image-slide;
+    -webkit-animation-duration: 4s;
+            animation-duration: 4s;
+    -webkit-animation-iteration-count: initial;
+            animation-iteration-count: initial;
+  }
+}
+
+@media screen and (max-width: 959px) {
+  .p-lesson-top-image {
+    display: none;
+  }
 }
 
 @-webkit-keyframes fade-lesson-image-slide {
@@ -698,18 +716,26 @@ body {
   }
 }
 
+@media screen and (max-width: 959px) {
+  .p-news-top {
+    background-color: #FCF9F9;
+  }
+}
+
 .p-news-top-wrap {
   background-color: white;
   margin: 0 5%;
 }
 
-.p-news-top-wrap__box {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  padding: 15vh 0;
+@media screen and (min-width: 960px) {
+  .p-news-top-wrap__box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    padding: 15vh 0;
+  }
 }
 
 .p-news-top-wrap__title {
@@ -718,11 +744,28 @@ body {
   font-size: 40px;
   letter-spacing: 5px;
   margin: 0;
-  padding-top: 10vh;
+}
+
+@media screen and (min-width: 960px) {
+  .p-news-top-wrap__title {
+    padding-top: 10vh;
+  }
+}
+
+@media screen and (max-width: 959px) {
+  .p-news-top-wrap__title {
+    padding: 24px 0;
+    margin-bottom: 24px;
+    font-size: 20px;
+  }
 }
 
 .p-news-top-wrap__title_border-bottom {
   border-bottom: solid 2px #e9c3c3;
+}
+
+.p-news-top-article__sp {
+  margin-bottom: 24px;
 }
 
 .p-news-top-article__image {
@@ -730,15 +773,56 @@ body {
   height: 500px;
 }
 
-.p-news-top-article__text {
+@media screen and (max-width: 959px) {
+  .p-news-top-article__image {
+    margin: 0 auto;
+  }
+}
+
+.p-news-top-article__text-title {
   padding-top: 16px;
   font-weight: 400;
   font-size: 20px;
+  color: black;
+}
+
+@media screen and (max-width: 959px) {
+  .p-news-top-article__text-title {
+    text-align: center;
+  }
+}
+
+.p-news-top-article__text-title_black {
+  color: black;
+}
+
+@media screen and (min-width: 960px) {
+  .p-news-top-article__text {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .p-news-top-article__more {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 959px) {
+  .p-news-top-article__more {
+    color: #e9c3c3;
+  }
 }
 
 .p-contact-top-wrap {
   background-color: white;
   margin: 5%;
+}
+
+@media screen and (max-width: 959px) {
+  .p-contact-top-wrap {
+    display: none;
+  }
 }
 
 .p-contact-top-wrap__title {
@@ -820,10 +904,18 @@ body {
   background-color: rgba(173, 163, 163, 0.1);
 }
 
-.p-footer-pc {
-  width: 100%;
-  height: 240px;
-  border-top: #707070 solid 1px;
+@media screen and (max-width: 959px) {
+  .p-footer-pc {
+    display: none !important;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .p-footer-pc {
+    width: 100%;
+    height: 240px;
+    border-top: #707070 solid 1px;
+  }
 }
 
 .p-footer-pc-menu__single {
@@ -990,6 +1082,11 @@ body {
   margin-bottom: 144px;
 }
 
+main {
+  padding: 0 8px;
+  background-color: #FCF9F9;
+}
+
 .u-pt_xl {
   padding-top: 40px;
 }
@@ -1141,6 +1238,31 @@ body {
 }
 
 .u-ml_xs {
+  margin-left: 8px;
+}
+
+.u-mx_xl {
+  margin-right: 40px;
+  margin-left: 40px;
+}
+
+.u-mx_lg {
+  margin-right: 24px;
+  margin-left: 24px;
+}
+
+.u-mx_md {
+  margin-right: 16px;
+  margin-left: 16px;
+}
+
+.u-mx_sm {
+  margin-right: 12px;
+  margin-left: 12px;
+}
+
+.u-mx_xs {
+  margin-right: 8px;
   margin-left: 8px;
 }
 

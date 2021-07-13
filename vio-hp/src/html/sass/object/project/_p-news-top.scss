@@ -1,11 +1,19 @@
 .p-news-top {
+  @include screen-sp {
+    background-color: $background-color;
+  }
   &-wrap{
     background-color: white;
     margin: 0 5%;
     &__box {
-      display: flex;
-      justify-content: space-around;
-      padding: 15vh 0;
+      @include screen-pc {
+        display: flex;
+        justify-content: space-around;
+        padding: 15vh 0;
+      }
+      @include screen-sp {
+
+      }
     }
     &__title {
       text-align: center;
@@ -13,21 +21,54 @@
       font-size: $font-size-title;
       letter-spacing: 5px;
       margin: 0;
-      padding-top: 10vh;
+      @include screen-pc {
+        padding-top: 10vh;
+      }
+      @include screen-sp {
+        padding: 24px 0;
+        margin-bottom: 24px;
+        font-size: 20px;
+      }
       &_border-bottom {
         border-bottom: solid 2px $primary-color;
       }
     }
   }
   &-article {
+    &__sp {
+      margin-bottom: $gutter-lg;
+    }
     &__image {
       width: 300px;
       height: 500px;
+      @include screen-sp {
+        margin: 0 auto;
+      }
     }
-    &__text {
+    &__text-title {
       padding-top: 16px;
       font-weight: 400;
       font-size: $font-size-xl;
+      color: black;
+      @include screen-sp {
+        text-align: center;
+      }
+      &_black {
+        color: black;
+      }
+    }
+    &__text {
+      @include screen-pc {
+        display: none;
+      }
+    }
+    &__more {
+      @include screen-pc {
+        display: none;
+      }
+      @include screen-sp {
+        color: $primary-color;
+      }
     }
   }
 }
