@@ -5,7 +5,7 @@ import '../../../html/css/style.css'
 
 export const ProfileText: React.FC = () => {
   return(
-    <div className='p-profile-top-text'>
+    <div className='p-profile-top-text p-profile-top__sp'>
       <h2 className='p-profile-top-text__title'>
         <span className='p-profile-top-text__title_border-bottom u-pb_lg'>PROFILE</span>
       </h2>

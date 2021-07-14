@@ -2,6 +2,11 @@
   @include screen-sp {
     background-color: $background-color;
   }
+  &__sp {
+    @include screen-sp {
+      margin-top: 30px;
+    }
+  }
   &-wrap{
     background-color: white;
     margin: 0 5%;

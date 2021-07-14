@@ -3,7 +3,7 @@ import '../../../html/css/style.css';
 
 export const LessonText: React.FC = () => {
   return (
-    <div className="p-lesson-top-text">
+    <div className="p-lesson-top-text p-lesson-top__sp">
       <h2 className="p-lesson-top-text__title">
         <span className="p-lesson-top-text__title_border-bottom u-pb_lg">LESSON</span>
       </h2>

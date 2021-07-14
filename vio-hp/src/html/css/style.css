@@ -436,10 +436,18 @@ body {
   z-index: 20;
 }
 
-.p-profile-top {
-  position: relative;
-  display: none;
-  height: 100vh;
+@media screen and (min-width: 960px) {
+  .p-profile-top {
+    position: relative;
+    display: none;
+    height: 100vh;
+  }
+}
+
+@media screen and (max-width: 959px) {
+  .p-profile-top__sp {
+    padding-top: 48px;
+  }
 }
 
 @media screen and (min-width: 960px) {
@@ -459,6 +467,14 @@ body {
     -webkit-animation-iteration-count: initial;
             animation-iteration-count: initial;
     z-index: 10;
+  }
+}
+
+@media screen and (max-width: 959px) {
+  .p-profile-top-text {
+    border: 1px solid #e9c3c3;
+    border-radius: 60px;
+    min-height: 720px;
   }
 }
 
@@ -501,24 +517,63 @@ body {
   margin: 0;
 }
 
+@media screen and (max-width: 959px) {
+  .p-profile-top-text__title {
+    font-size: 20px;
+    margin-bottom: 72px;
+  }
+}
+
 .p-profile-top-text__title_border-bottom {
   border-bottom: solid 2px #e9c3c3;
 }
 
 .p-profile-top-text__text-body {
-  padding: 64px 120px;
   text-align: center;
   line-height: 2.5;
+}
+
+@media screen and (min-width: 960px) {
+  .p-profile-top-text__text-body {
+    padding: 64px 120px;
+  }
+}
+
+@media screen and (max-width: 959px) {
+  .p-profile-top-text__text-body {
+    padding: 0 24px;
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 959px) {
+  .p-profile-top-text__button {
+    margin-bottom: 24px;
+    margin-top: 40px;
+  }
 }
 
 .p-profile-top-text__button_text {
   cursor: pointer;
   color: #e9c3c3;
   letter-spacing: 5px;
-  font-size: 16px;
-  padding: 16px 32px 16px 32px;
-  border: 2px solid #e9c3c3;
   border-radius: 10px;
+}
+
+@media screen and (min-width: 960px) {
+  .p-profile-top-text__button_text {
+    font-size: 16px;
+    padding: 16px 32px 16px 32px;
+    border: 2px solid #e9c3c3;
+  }
+}
+
+@media screen and (max-width: 959px) {
+  .p-profile-top-text__button_text {
+    font-size: 12px;
+    padding: 14px 50px;
+    border: 1px solid #e9c3c3;
+  }
 }
 
 .p-profile-top-text__button_text:hover {
@@ -576,10 +631,19 @@ body {
   }
 }
 
-.p-lesson-top {
-  position: relative;
-  display: none;
-  height: 100vh;
+@media screen and (min-width: 960px) {
+  .p-lesson-top {
+    position: relative;
+    display: none;
+    height: 100vh;
+  }
+}
+
+@media screen and (max-width: 959px) {
+  .p-lesson-top__sp {
+    padding-top: 48px;
+    margin-top: 30px;
+  }
 }
 
 @media screen and (min-width: 960px) {
@@ -599,6 +663,14 @@ body {
     -webkit-animation-iteration-count: initial;
             animation-iteration-count: initial;
     z-index: 10;
+  }
+}
+
+@media screen and (max-width: 959px) {
+  .p-lesson-top-text {
+    border: 1px solid #e9c3c3;
+    border-radius: 60px;
+    min-height: 720px;
   }
 }
 
@@ -641,24 +713,63 @@ body {
   margin: 0;
 }
 
+@media screen and (max-width: 959px) {
+  .p-lesson-top-text__title {
+    font-size: 20px;
+    margin-bottom: 72px;
+  }
+}
+
 .p-lesson-top-text__title_border-bottom {
   border-bottom: solid 2px #e9c3c3;
 }
 
 .p-lesson-top-text__text-body {
-  padding: 64px 120px;
   text-align: center;
   line-height: 2.5;
+}
+
+@media screen and (min-width: 960px) {
+  .p-lesson-top-text__text-body {
+    padding: 64px 120px;
+  }
+}
+
+@media screen and (max-width: 959px) {
+  .p-lesson-top-text__text-body {
+    padding: 0 24px;
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 959px) {
+  .p-lesson-top-text__button {
+    margin-bottom: 24px;
+    margin-top: 40px;
+  }
 }
 
 .p-lesson-top-text__button_text {
   cursor: pointer;
   color: #e9c3c3;
   letter-spacing: 5px;
-  font-size: 16px;
-  padding: 16px 32px 16px 32px;
-  border: 2px solid #e9c3c3;
   border-radius: 10px;
+}
+
+@media screen and (min-width: 960px) {
+  .p-lesson-top-text__button_text {
+    font-size: 16px;
+    padding: 16px 32px 16px 32px;
+    border: 2px solid #e9c3c3;
+  }
+}
+
+@media screen and (max-width: 959px) {
+  .p-lesson-top-text__button_text {
+    font-size: 12px;
+    padding: 14px 50px;
+    border: 1px solid #e9c3c3;
+  }
 }
 
 .p-lesson-top-text__button_text:hover {
@@ -719,6 +830,12 @@ body {
 @media screen and (max-width: 959px) {
   .p-news-top {
     background-color: #FCF9F9;
+  }
+}
+
+@media screen and (max-width: 959px) {
+  .p-news-top__sp {
+    margin-top: 30px;
   }
 }
 

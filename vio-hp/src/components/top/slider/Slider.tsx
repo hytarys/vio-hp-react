@@ -31,7 +31,9 @@ const Slider: React.FC = () => {
     <SwiperSlide><img src={slideLogo4} alt="" /></SwiperSlide>
   </Swiper>
   }else{
-    const slideLogo1 = require('../../../html/img/300x500.png');
+    const slideLogo1 = require('../../../html/img/slider-top-sp1.jpg');
+    const slideLogo2 = require('../../../html/img/slider-top-sp2.jpg');
+    const slideLogo3 = require('../../../html/img/slider-top-sp3.jpg');
     return<Swiper
     tag="section"
     wrapperTag="ul"
@@ -44,6 +46,8 @@ const Slider: React.FC = () => {
     >
     <SwiperSlide></SwiperSlide>
     <SwiperSlide><img src={slideLogo1} alt=""/></SwiperSlide>
+    <SwiperSlide><img src={slideLogo2} alt=""/></SwiperSlide>
+    <SwiperSlide><img src={slideLogo3} alt=""/></SwiperSlide>
   </Swiper>
   }
 }
