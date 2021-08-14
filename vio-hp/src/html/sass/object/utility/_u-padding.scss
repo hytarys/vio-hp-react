@@ -34,6 +34,24 @@
   }
 }
 
+.u-pl {
+  &_xl {
+    padding-left: $gutter-xl;
+  }
+  &_lg {
+    padding-left: $gutter-lg;
+  }
+  &_md {
+    padding-left: $gutter-md;
+  }
+  &_sm {
+    padding-left: $gutter-xs;
+  }
+  &_xs {
+    padding-left: $gutter-xs;
+  }
+}
+
 .u-py {
   &_lg {
     padding-top: $gutter-lg;
@@ -51,5 +69,14 @@
   &_section {
     padding-left: 10%;
     padding-right: 10%;
+  }
+  &_xl {
+    padding-left: $gutter-xl;
+    padding-right: $gutter-xl;
+  }
+
+  &_xxl {
+    padding-left: 64px;
+    padding-right: 64px;
   }
 }

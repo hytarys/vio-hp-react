@@ -25,10 +25,26 @@
       margin-right: 83px;
     }
   }
-  &_copy {
+  &_copy-pc {
+    @include screen-sp {
+      display: none;
+    }
     font-size: 4px !important;
   }
   &_bg {
     background-color: white;
   }
+}
+
+.p-footer-sp__follow{
+  letter-spacing: 2px;
+  color: $primary-color;
+}
+
+.p-footer-sp__follow-box{
+  border-bottom: 1px solid rgba($color: #707070, $alpha: 0.5);
+}
+
+.p-footer_copy-sp{
+  font-size: 4px;
 }

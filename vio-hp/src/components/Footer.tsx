@@ -23,7 +23,7 @@ const Footer: React.FC = () => {
           <Link to='/lesson' className='p-footer-pc-menu__single'>Contact</Link>
         </div>
       </div>
-      <div className="u-text_center u-mb_md"><span className="p-footer_copy">©️HinakoFuchino.co</span></div>
+      <div className="u-text_center u-mb_md"><span className="p-footer_copy-pc">©️HinakoFuchino.co</span></div>
     </footer>
   )
 }

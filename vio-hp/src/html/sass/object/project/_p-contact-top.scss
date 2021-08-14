@@ -57,3 +57,30 @@
     }
   }
 }
+
+.p-contact-sp{
+  @include screen-pc {
+    display: none;
+  }
+  background-color: white;
+}
+
+.p-contact-sp__button {
+  @include screen-pc {
+    display: none;
+  }
+  background-color: $primary-color;
+  background-color: white;
+  letter-spacing: 2px;
+  border: none;
+  color: white;
+  background-color: $primary-color;
+  border-radius: 12px;
+}
+
+.p-contact-sp__text{
+  @include screen-pc {
+    display: none;
+  }
+  color: $primary-color;
+}

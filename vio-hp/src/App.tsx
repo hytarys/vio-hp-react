@@ -3,6 +3,7 @@ import { Root, Routes } from 'react-static'
 import { Router } from '@reach/router'
 import Header from 'components/Header'
 import Footer from 'components/Footer'
+import FooterSP from 'components/FooterSP'
 import './html/css/style.css'
 
 
@@ -16,6 +17,7 @@ function App() {
             </Router>
         </React.Suspense>
       <Footer />
+      <FooterSP />
     </Root>
   )
 }
