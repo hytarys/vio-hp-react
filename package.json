@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "dotenv": "^10.0.0",
     "node-sass": "^6.0.0",
     "react-static-plugin-sass": "^7.3.0",
     "swiper": "^6.7.0"
