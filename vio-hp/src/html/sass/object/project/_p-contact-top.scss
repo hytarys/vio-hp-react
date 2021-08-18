@@ -20,7 +20,12 @@
   &-form {
     display: flex;
     align-items: center;
-    width: 40%;
+    @include screen-pc {
+      width: 40%;
+    }
+    @include screen-sp {
+      width: 100%;
+    }
     &-main {
       width: 100%;
       &__textbox {
@@ -83,4 +88,17 @@
     display: none;
   }
   color: $primary-color;
+}
+
+.p-contact-form {
+  @include screen-pc {
+    margin: 0 auto;
+  }
+  @include screen-sp {
+    margin: 0 auto;
+  }
+}
+
+.p-contact-sp_px {
+  padding: 0 8px;
 }

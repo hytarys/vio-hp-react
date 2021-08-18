@@ -1075,7 +1075,18 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 40%;
+}
+
+@media screen and (min-width: 960px) {
+  .p-contact-top-form {
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 959px) {
+  .p-contact-top-form {
+    width: 100%;
+  }
 }
 
 .p-contact-top-form-main {
@@ -1168,6 +1179,22 @@ body {
   .p-contact-sp__text {
     display: none;
   }
+}
+
+@media screen and (min-width: 960px) {
+  .p-contact-form {
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 959px) {
+  .p-contact-form {
+    margin: 0 auto;
+  }
+}
+
+.p-contact-sp_px {
+  padding: 0 8px;
 }
 
 @media screen and (max-width: 959px) {

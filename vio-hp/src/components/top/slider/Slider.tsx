@@ -17,7 +17,7 @@ const Slider: React.FC = () => {
     return<Swiper
     tag="section"
     wrapperTag="ul"
-    autoplay={{stopOnLastSlide: true, delay: 1000}}
+    autoplay={{stopOnLastSlide: true, delay: 2000}}
     effect = "fade"
     speed = {3000}
     allowTouchMove = {false}

@@ -3,7 +3,7 @@ import '../../../html/css/style.css';
 
 export const ContactForm: React.FC = () => {
   return (
-    <div className='p-contact-top-form u-mt_xxl  u-margin_right_auto u-margin_left_auto u-pb_xl'>
+    <div className='p-contact-top-form u-mt_xxl p-contact-form u-pb_xl'>
       <form
       className='p-contact-top-form-main u-text_center u-pb_xl'
       action="#">
