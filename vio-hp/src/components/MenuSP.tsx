@@ -8,7 +8,7 @@ const MenuSP: React.FC =() => {
     setOpenMenu(!openMenu);
   }
   return(
-    <header className="p-header-hamburger">
+    <header className={openMenu ? "p-header-hamburger-open u-position_absolute" : "p-header-hamburger-close u-position_absolute"}>
       <div className="p-header-hamburger__button" onClick={()=>menuFunction()}>
         <div
         className={openMenu ? "p-header-open p-header-hamburger_position" : "p-header-close p-header-hamburger_position"}></div>
@@ -18,18 +18,18 @@ const MenuSP: React.FC =() => {
         className={openMenu ? "p-header-open p-header-hamburger_position" : "p-header-close p-header-hamburger_position"}></div>
       </div>
       <div className={openMenu ? "p-header-block" : "p-header-none"}>
-        <ul>
-          <li>
-            <Link to="/" className="p-header__pc__menu__single">Top</Link>
+        <ul className="u-pl_none">
+          <li className="u-text_center p-header-sp-menu u-py_lg">
+            <Link to="/" className="p-header__sp__menu__single">TOP</Link>
           </li>
-          <li>
-            <Link to="/profile" className="p-header__pc__menu__single">Profile</Link>
+          <li className="u-text_center p-header-sp-menu u-py_lg">
+            <Link to="/profile" className="p-header__sp__menu__single">PROFILE</Link>
           </li>
-          <li>
-            <Link to="/lesson" className="p-header__pc__menu__single">Lesson</Link>
+          <li className="u-text_center p-header-sp-menu u-py_lg">
+            <Link to="/lesson" className="p-header__sp__menu__single">LESSON</Link>
           </li>
-          <li>
-            <Link to="/contact" className="p-header__pc__menu__single">Contact</Link>
+          <li className="u-text_center p-header-sp-menu u-py_lg">
+            <Link to="/contact" className="p-header__sp__menu__single">CONTACT</Link>
           </li>
         </ul>
       </div>

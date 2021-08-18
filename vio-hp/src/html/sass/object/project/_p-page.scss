@@ -1,4 +1,4 @@
-.p-page-header {
+.p-page-header-pc {
   @include screen-pc {
     height: 400px;
     background-color: white;
@@ -17,4 +17,24 @@
   @include screen-sp {
     display: none;
   }
+}
+
+.p-page-header-sp__title {
+  >h2 {
+  @include screen-sp {
+      font-size: 24px;
+      font-weight: 300;
+      letter-spacing: 1.8px;
+    }
+  }
+}
+
+.p-page-header-sp_pt{
+  @include screen-sp {
+    padding-top: 100px;
+  }
+}
+
+.p-page-header-sp {
+  background-color: $background-color;
 }

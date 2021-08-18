@@ -36,14 +36,29 @@
   }
 }
 
-.p-header-hamburger {
+.p-header-hamburger-open {
   @include screen-pc {
     display: none;
   }
-  &__button {
-    text-align: right;
-    margin-right: $gutter-sm;
+  z-index: 10;
+  right: 0;
+  background-color: white;
+  transition: .4s;
+  opacity: 0.9;
+}
+
+.p-header-hamburger-close {
+  @include screen-pc {
+    display: none;
   }
+  z-index: 10;
+  right: 0;
+  transition: .4s;
+}
+
+.p-header-hamburger__button {
+  text-align: right;
+  margin-right: $gutter-sm;
 }
 
 .p-header-open {
@@ -86,4 +101,27 @@
 .p-header-hamburger_position{
   margin-left: auto;
   margin-top: $gutter-xs;
+}
+
+.p-header-none{
+  display: none;
+}
+
+.p-header-block {
+  width: 100vw;
+  height: 100vh;
+  overflow-y: hidden;
+}
+
+.p-header-sp-menu {
+  &:first-child {
+    border-top: 1px solid #DBDBDB;
+  }
+  font-size: $font-size-md;
+  border-bottom: 1px solid #DBDBDB;
+}
+
+.p-header__sp__menu__single {
+  color: black;
+  letter-spacing: 1.5px;
 }

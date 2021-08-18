@@ -36,6 +36,12 @@
   }
 }
 
+.p-footer-sp {
+  @include screen-pc {
+     display: none;
+  }
+}
+
 .p-footer-sp__follow{
   letter-spacing: 2px;
   color: $primary-color;

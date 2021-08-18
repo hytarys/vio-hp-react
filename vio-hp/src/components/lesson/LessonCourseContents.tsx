@@ -6,7 +6,7 @@ const LessonCourseContents: React.FC = () => {
   const lessonCourseImg = require("../../html/img/560x400.png");
 
   return (
-    <div className="u-flex u-flex_jc_sb">
+    <div className="u-flex u-flex_jc_sb p-lesson-course-sp">
       <div className="p-lesson-course">
         <h3 className="u-text_center  u-mb_xl">
           <span className="p-lesson-strength-text__title u-pb_md">コース1</span>

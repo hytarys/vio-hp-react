@@ -1,34 +1,68 @@
 .p-profile {
+  @include screen-sp {
+    flex-direction: column;
+  }
   &__image {
-    margin-left: 10%;
+    @include screen-pc {
+      margin-left: 10%;
+    }
   }
   &__text {
-    margin-left: 10%;
+    @include screen-pc {
+      margin-left: 10%;
+    }
   }
 }
 
 .p-profile-image {
-  width: 35%;
-  object-fit: cover;
-  border-radius: 50px;
+  @include screen-pc {
+    width: 35%;
+    object-fit: cover;
+    border-radius: 50px;
+  }
+  @include screen-sp {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50px;
+  }
 }
 
 .p-profile-text {
-  width: 35%;
+  @include screen-pc {
+    width: 100%;
+  }
   &__name {
     font-family: "ヒラギノ明朝 ProN";
-    font-size: 56px;
+    @include screen-pc {
+      font-size: 56px;
+    }
+    @include screen-sp {
+      font-size: $font-size-xl;
+      font-weight: 300;
+      margin: $gutter-xl 0px;
+    }
   }
   &__main {
-    line-height: 3;
-    font-weight: 100;
+    @include screen-pc {
+      line-height: 3;
+      font-weight: 100;
+    }
+    @include screen-sp {
+      line-height: 1.5;
+      font-weight: 100;
+    }
   }
 }
 
 .p-profile-contact {
-  width: 100%;
-  height: 400px;
-  background-color: white;
+  @include screen-pc {
+    width: 100%;
+    height: 400px;
+    background-color: white;
+  }
+  @include screen-sp {
+    display: none;
+  }
 }
 
 .p-profile__contact {
@@ -53,4 +87,8 @@
   margin-right: calc(((100vw - 100%) / 2) * -1);
   height: 400px;
   background-color: white;
+}
+
+.p-profile-sp_px {
+  padding: 0 $gutter-xs;
 }
