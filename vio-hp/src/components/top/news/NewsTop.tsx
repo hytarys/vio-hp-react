@@ -1,6 +1,6 @@
 import React from "react";
 import '../../../html/css/style.css'
-import { NewsArticle } from "./NewsArticle";
+import NewsArticle from "./NewsArticle";
 
 const NewsTop: React.FC = () => {
   return (
@@ -10,8 +10,6 @@ const NewsTop: React.FC = () => {
           <span className='p-news-top-wrap__title_border-bottom u-pb_lg'>NEWS</span>
         </div>
         <div className='p-news-top-wrap__box'>
-          <NewsArticle />
-          <NewsArticle />
           <NewsArticle />
         </div>
       </div>

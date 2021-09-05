@@ -1,3 +1,22 @@
+.p-lesson-container {
+  grid-area: lesson;
+  display: none;
+  align-items: center;
+  @include screen-pc {
+    grid-template-rows: minmax(0, 900px);
+    grid-template-columns: 1fr 1fr;
+    margin: 0 10%;
+    grid-template-areas: 
+    "image text";
+  }
+  @include screen-sp {
+    grid-template-rows: auto;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "text";
+  }
+}
+
 .p-lesson-top {
   @include screen-pc {
     position: relative;
@@ -15,10 +34,7 @@
   // トップページのレッスンのテキスト部分
   &-text {
     @include screen-pc {
-      position: absolute;
-      top: -40px;
-      right: 5%;
-      width: 45%;
+      grid-area: text;
       background-color: white;
       border: 2px solid $primary-color;
       border-radius: 150px;
@@ -31,7 +47,6 @@
     @include screen-sp {
       border: 1px solid $primary-color;
       border-radius: 60px;
-      min-height: 720px;
     }
     // フェードインアニメーション(テキスト部分)
     @keyframes fade-lesson-text-down {
@@ -64,7 +79,7 @@
     }
     &__text-body {
       @include screen-pc {
-        padding: 64px 120px;
+        padding: 64px 17%;
       }
       @include screen-sp {
         padding: 0 24px;
@@ -94,7 +109,8 @@
         letter-spacing: 5px;
         border-radius: 10px;
         &:hover {
-          background-color: rgba(173, 163, 163, 0.1);
+          background-color: $primary-color;
+          color: white;
         }
       }
     }
@@ -104,11 +120,9 @@
   // トップページのレッスンの画像部分
   &-image {
     @include screen-pc {
-      position: absolute;
-      top: 13%;
-      left: 5%;
-      width: 50%;
-      height: auto;
+      grid-area: image;
+      width: 110%;
+      margin-right: -10%;
       border-radius: 120px;
       z-index: 30;
       border: 2px solid $primary-color;

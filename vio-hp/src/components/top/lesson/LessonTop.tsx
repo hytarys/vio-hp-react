@@ -10,36 +10,33 @@ const scrollAmount = ():number => {
 const LessonTop: React.FC = () => {
 
     // スクロールが20pxを超えたら発現する処理
-    const[isTop, setIsTop] = useState<boolean>(true);
+    const[isTop, setIsTop] = useState<boolean>(false);
 
     const onScroll = ():void => {
-      const position = scrollAmount();
-      console.log(position);
+      let position = scrollAmount();
   
-      if(position >= 800) {
+      if(position >= 800 && isTop === false) {
         setIsTop(true);
-      } else {
-        setIsTop(false);
       }
     }
   
     useEffect(() => {
       document.addEventListener('scroll', onScroll);
-      return ():void => document.removeEventListener('scroll', onScroll)
+      ():void => document.removeEventListener('scroll', onScroll)
     })
   
     const scrollStyle: React.CSSProperties = isTop
-    ? {display:'flex'}
+    ? {display:'grid'}
     : {display: 'none'}
   
     return (
-      <section
-      className="p-lesson-top"
+      <div
+      className="p-lesson-container"
       style={scrollStyle}
       >
         <LessonImage />
         <LessonText />
-      </section>
+      </div>
     )
 }
 

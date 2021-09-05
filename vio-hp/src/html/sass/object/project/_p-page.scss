@@ -36,5 +36,7 @@
 }
 
 .p-page-header-sp {
-  background-color: $background-color;
+  @include screen-sp {
+    background-color: $background-color;
+  }
 }

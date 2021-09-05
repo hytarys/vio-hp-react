@@ -1,7 +1,7 @@
 import React from "react";
 import '../../../html/css/style.css';
 
-const lessonTopImg = require('../../../html/img/600x400.png')
+const lessonTopImg = require('../../../html/img/lesson-top.jpg')
 
 export const LessonImage: React.FC = () => {
   return (

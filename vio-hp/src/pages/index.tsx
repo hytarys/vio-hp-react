@@ -6,11 +6,14 @@ import LessonTop from "components/top/lesson/LessonTop";
 import NewsTop from "components/top/news/NewsTop";
 import ContactTop from "components/top/contact/ContactTop";
 
+
 export default() => (
   <main>
     <Slider />
-    <ProfileTop />
-    <LessonTop />
+    <section className="p-grid">
+      <ProfileTop />
+      <LessonTop />
+    </section>
     <NewsTop />
     <ContactTop />
   </main>

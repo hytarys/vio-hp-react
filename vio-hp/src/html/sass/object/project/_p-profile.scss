@@ -9,7 +9,8 @@
   }
   &__text {
     @include screen-pc {
-      margin-left: 10%;
+      margin-right: 10%;
+      margin-left: 3%;
     }
   }
 }

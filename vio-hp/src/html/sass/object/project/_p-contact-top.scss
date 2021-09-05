@@ -56,7 +56,8 @@
         border-radius: 10px;
         background-color: white;
         &:hover {
-          background-color: rgba(173, 163, 163, 0.1);
+          background-color: $primary-color;
+          color: white;
         }
       }
     }

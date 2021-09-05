@@ -1,10 +1,32 @@
-.p-profile-top {
+.p-profile-container {
+  display: none;
+  grid-area: profile;
+  align-items: center;
   @include screen-pc {
-    position: relative;
-    display: none;
-    height: 100vh;
+    grid-template-rows: minmax(0, 900px);
+    grid-template-columns: 1fr 1fr;
+    margin: 0 10%;
+    grid-template-areas: 
+    "text image";
   }
+  @include screen-sp {
+    grid-template-rows: auto;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "text";
+  }
+}
 
+.p-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: 
+  "profile"
+  "lesson";
+}
+
+.p-profile-top {
   &__sp {
     @include screen-sp{
       padding-top: 48px;
@@ -14,14 +36,11 @@
   // トップページのプロフィールのテキスト部分
   &-text {
     @include screen-pc {
-      position: absolute;
-      top: -40px;
-      left: 5%;
-      width: 45%;
       background-color: white;
       border: 2px solid $primary-color;
       border-radius: 150px;
       padding: 96px 0 ;
+      grid-area: text;
       animation-name: fade-profile-text-down;
       animation-duration: 4s;
       animation-iteration-count: initial;
@@ -30,7 +49,6 @@
     @include screen-sp {
       border: 1px solid $primary-color;
       border-radius: 60px;
-      min-height: 720px;
     }
 
     // フェードインアニメーション(テキスト部分)
@@ -64,7 +82,7 @@
     }
     &__text-body {
       @include screen-pc {
-        padding: 64px 120px;
+        padding: 64px 17%;
       }
       @include screen-sp {
         padding: 0 24px;
@@ -94,7 +112,8 @@
         }
         border-radius: 10px;
         &:hover {
-          background-color: rgba(173, 163, 163, 0.1);
+          background-color: $primary-color;
+          color: white;
         }
       }
     }
@@ -103,13 +122,11 @@
   // トップページのプロフィールの画像部分
   &-image {
     @include screen-pc {
-      position: absolute;
-      top: 13%;
-      right: 5%;
-      width: 50%;
-      height: auto;
+      grid-area: image;
+      width: 110%;
       border-radius: 120px;
       z-index: 30;
+      margin-left: -10%;
       border: 2px solid $primary-color;
       animation-name: fade-profile-image-slide;
       animation-duration: 4s;
