@@ -2203,4 +2203,20 @@ main {
       -ms-flex-direction: column;
           flex-direction: column;
 }
+
+.animation, .animation2 {
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: 1s;
+  transition: 1s;
+  -webkit-transform: translateY(30px);
+          transform: translateY(30px);
+}
+
+.active {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
 /*# sourceMappingURL=style.css.map */

@@ -1,6 +1,6 @@
 import React,{useEffect, useState} from 'react'
 import { Link } from '@reach/router'
-import { useFixed } from './hook/useFixed'
+import { useFixed } from '../hooks/useFixed'
 import '../html/css/style.css'
 
 const Header: React.FC = () => {

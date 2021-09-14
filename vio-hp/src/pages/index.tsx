@@ -7,8 +7,9 @@ import NewsTop from "components/top/news/NewsTop";
 import ContactTop from "components/top/contact/ContactTop";
 
 
-export default() => (
-  <main>
+function Home () {
+  return (
+    <>
     <Slider />
     <section className="p-grid">
       <ProfileTop />
@@ -16,6 +17,9 @@ export default() => (
     </section>
     <NewsTop />
     <ContactTop />
-  </main>
-)
+  </>
+  )
+}
+
+export default Home;
 
