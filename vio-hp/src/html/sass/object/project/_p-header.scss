@@ -38,6 +38,12 @@
   }
 }
 
+@include screen-sp {
+  #pcHam {
+    display: none !important;
+  }
+}
+
 .p-header-hamburger-open {
   @include screen-pc {
     display: none;

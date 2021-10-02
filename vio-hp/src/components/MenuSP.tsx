@@ -8,7 +8,7 @@ const MenuSP: React.FC =() => {
     setOpenMenu(!openMenu);
   }
   return(
-    <header className={openMenu ? "p-header-hamburger-open u-position_absolute" : "p-header-hamburger-close u-position_absolute"}>
+    <header className={openMenu ? "p-header-hamburger-open u-position_fixed" : "p-header-hamburger-close u-position_fixed"}>
       <div className="p-header-hamburger__button" onClick={()=>menuFunction()}>
         <div
         className={openMenu ? "p-header-open p-header-hamburger_position" : "p-header-close p-header-hamburger_position"}></div>

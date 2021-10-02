@@ -420,6 +420,12 @@ body {
   }
 }
 
+@media screen and (max-width: 959px) {
+  #pcHam {
+    display: none !important;
+  }
+}
+
 .p-header-hamburger-open {
   z-index: 10;
   right: 0;
@@ -2166,6 +2172,10 @@ main {
 
 .u-position_relative {
   position: relative;
+}
+
+.u-position_fixed {
+  position: fixed;
 }
 
 .u-flex {
