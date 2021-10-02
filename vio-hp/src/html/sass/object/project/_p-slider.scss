@@ -1,5 +1,22 @@
 .p-slider {
   height: 100vh;
-  width: 100%;
-  background-image: url("#{$imgPath}/slider.jpg");
+  width: 100vw;
+}
+
+#p-slider {
+  height: 720px;
+}
+
+.p-slider-contents {
+  position: absolute;
+  img {
+    width: 100%;
+    opacity: 1;
+    z-index: 20;
+  }
+}
+
+.swiper-wrapper {
+  margin: 0;
+  padding: 0;
 }

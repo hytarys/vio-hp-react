@@ -1,0 +1,105 @@
+.p-contact-top {
+  &-wrap {
+    @include screen-sp {
+      display: none;
+    }
+    background-color: white;
+    margin: 5%;
+    &__title {
+      text-align: center;
+      font-weight: 300;
+      font-size: $font-size-title;
+      letter-spacing: 5px;
+      margin: 0;
+      padding-top: 10vh;
+      &_border-bottom {
+        border-bottom: solid 2px $primary-color;
+      }
+    }
+  }
+  &-form {
+    display: flex;
+    align-items: center;
+    @include screen-pc {
+      width: 40%;
+    }
+    @include screen-sp {
+      width: 100%;
+    }
+    &-main {
+      width: 100%;
+      &__textbox {
+        border: #707070 solid 1px;
+        &::placeholder {
+          color: rgba(0,0,0,0.24);
+          letter-spacing: 5px;
+        }
+        &_sm {
+          width: 100%;
+          height: 32px;
+          padding: 32px 8px;
+        }
+        &_lg {
+          width: 100%;
+          height: 320px;
+          padding: 32px 8px;
+          resize: none;
+        }
+      }
+      &__button {
+        cursor: pointer;
+        color: $primary-color;
+        letter-spacing: 5px;
+        font-size: $font-size-button;
+        padding: 16px 32px 16px 32px;
+        border: 2px solid $primary-color;
+        border-radius: 10px;
+        background-color: white;
+        &:hover {
+          background-color: $primary-color;
+          color: white;
+        }
+      }
+    }
+  }
+}
+
+.p-contact-sp{
+  @include screen-pc {
+    display: none;
+  }
+  background-color: white;
+}
+
+.p-contact-sp__button {
+  @include screen-pc {
+    display: none;
+  }
+  background-color: $primary-color;
+  background-color: white;
+  letter-spacing: 2px;
+  border: none;
+  color: white;
+  background-color: $primary-color;
+  border-radius: 12px;
+}
+
+.p-contact-sp__text{
+  @include screen-pc {
+    display: none;
+  }
+  color: $primary-color;
+}
+
+.p-contact-form {
+  @include screen-pc {
+    margin: 0 auto;
+  }
+  @include screen-sp {
+    margin: 0 auto;
+  }
+}
+
+.p-contact-sp_px {
+  padding: 0 8px;
+}
