@@ -1,0 +1,116 @@
+.p-news-top {
+  @include screen-sp {
+    background-color: $background-color;
+  }
+  &__sp {
+    @include screen-sp {
+      margin-top: 30px;
+    }
+  }
+  &-wrap{
+    background-color: white;
+    margin: 0 5%;
+    display: grid;
+    grid-template-columns: 1fr;
+    @include screen-pc {
+      grid-template-rows: 4fr 8fr;
+      margin-top: 5%;
+    }
+    @include screen-sp {
+      grid-template-rows: 2fr 18fr;
+    }
+    grid-template-areas: 
+    "news-title"
+    "box";
+
+    &__box {
+      @include screen-pc {
+        grid-area: box;
+        display: grid;
+        grid-template-rows: 100%;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas: 
+        "article1 article2 article3";
+      }
+      @include screen-sp {
+        grid-area: box;
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "article1"
+        "article2"
+        "article3"
+        ;
+      }
+    }
+    &__title {
+      text-align: center;
+      font-weight: 300;
+      font-size: $font-size-title;
+      letter-spacing: 5px;
+      margin: 0;
+      @include screen-pc {
+        grid-area: news-title;
+        padding-top: 5%;
+      }
+      @include screen-sp {
+        padding: 24px 0;
+        margin-bottom: 24px;
+        font-size: 20px;
+      }
+      &_border-bottom {
+        border-bottom: solid 2px $primary-color;
+      }
+    }
+  }
+  &-article {
+    width: 80%;
+    &:first-of-type {
+      grid-area: article1;
+    }
+    &:nth-of-type(2) {
+      grid-area: article2;
+    }
+    &:nth-of-type(3){
+      grid-area: article3;
+    }
+    &__sp {
+      margin-bottom: $gutter-lg;
+      padding-bottom: $gutter-lg;
+    }
+    &__image {
+      >img{
+        width: 100%;
+      }
+      @include screen-sp {
+        margin: 0 auto;
+      }
+    }
+    &__text-title {
+      padding-top: 16px;
+      font-weight: 400;
+      font-size: $font-size-xl;
+      color: black;
+      @include screen-sp {
+        text-align: center;
+      }
+      &_black {
+        color: black;
+      }
+    }
+    &__text {
+      @include screen-pc {
+        display: none;
+      }
+    }
+    &__more {
+      @include screen-pc {
+        display: none;
+      }
+      @include screen-sp {
+        color: $primary-color;
+      }
+    }
+  }
+}

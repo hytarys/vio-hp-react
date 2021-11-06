@@ -1,0 +1,226 @@
+.p-header {
+  &__pc {
+    @include screen-pc {
+      position: fixed;
+      width: 100%;
+      height: 160px;
+      font-size: $font-size-xl;
+      text-align: right;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      z-index: 10000;
+      transition: 0.5s;
+      &:hover {
+        height: 160px;
+      }
+      &__menu {
+        margin: 34px 83px 34px 0px;
+        &__single {
+          margin-left: 90px;
+          color: $text-color;
+          padding-bottom: $gutter-xs;
+          border-bottom: #00000000 solid 2px;
+          &:hover {
+            color: $primary-color;
+            border-bottom: $primary-color solid 2px;
+            transition: color 0.3s, border-bottom 0.3s;
+          }
+          &:first-child {
+            margin-left: 0px;
+          }
+        }
+      }
+    }
+    @include screen-sp {
+      display: none;
+    }
+  }
+}
+
+@include screen-sp {
+  #pcHam {
+    display: none !important;
+  }
+}
+
+.p-header-hamburger-open {
+  @include screen-pc {
+    display: none;
+  }
+  z-index: 10;
+  right: 0;
+  background-color: white;
+  transition: .4s;
+  opacity: 0.9;
+}
+
+.p-header-hamburger-close {
+  @include screen-pc {
+    display: none;
+  }
+  z-index: 99999;
+  right: 0;
+  transition: .4s;
+}
+
+.p-header-hamburger-open-pc {
+  @include screen-sp {
+    display: none;
+  }
+  position: fixed;
+  z-index: 99999;
+  top: 0px;
+  right: 0px;
+  background-color: white;
+  height: 100vh;
+  overflow-y: hidden;
+  // transition: background-color .4s;
+  opacity: 0.9;
+  animation: show 0.5s;
+  > .p-header-hamburger__button{
+    position: absolute;
+    top: 80px;
+    right: 80px;
+    cursor: pointer;
+  }
+}
+
+.p-header-hamburger-close-pc {
+  @include screen-sp {
+    display: none;
+  }
+  position: fixed;
+  z-index: 999999;
+  top: 40px;
+  right: 40px;
+  cursor: pointer;
+  // transition:position 0s, .4s;
+  background-color: $primary-color;
+  padding: 40px;
+  border-radius: 100%;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.p-header-hamburger__button {
+  text-align: right;
+  margin-right: $gutter-sm;
+  @include screen-pc {
+    margin: 0;
+  }
+}
+
+.p-header-open {
+  background-color: black;
+  height: 2px;
+  width: 28px;
+  transition: all .4s;
+  &:first-child{
+    transform: translateY(10px) rotate(-45deg);
+  }
+  &:nth-child(2) {
+    opacity: 0;
+  }
+  &:nth-child(3) {
+    transform: translateY(-10px) rotate(45deg);
+  }
+  &-second {
+    height: 2px;
+    width: 28px;
+    opacity: 1;
+  }
+}
+
+.p-header-close {
+  transition: all .4s;
+  background-color: black;
+  height: 2px;
+  width: 28px;
+  &:first-child{
+    transform: translateY(0px) rotate(0);
+  }
+  &:nth-child(2) {
+    opacity: 1;
+  }
+  &:nth-child(3) {
+    transform: translateY(0px) rotate(0);
+  }
+}
+
+.p-header-hamburger_position{
+  margin-left: auto;
+  margin-top: $gutter-xs;
+  @include screen-pc {
+    &:first-of-type {
+      margin-top: 0;
+    }
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.p-header-none{
+  display: none;
+}
+
+.p-header-block {
+  width: 100vw;
+  height: 100vh;
+  overflow-y: hidden;
+}
+
+.p-header-block-pc {
+  width: 100vw;
+  height: 100vh;
+  overflow-y: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.p-header-sp-menu {
+  &:first-child {
+    border-top: 1px solid #DBDBDB;
+  }
+  font-size: $font-size-md;
+  border-bottom: 1px solid #DBDBDB;
+}
+
+.p-header__sp__menu__single {
+  color: black;
+  letter-spacing: 1.5px;
+}
+
+@keyframes show {
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 0.9;
+  }
+}
+
+.p-header__pc__menu__single_ham{
+  margin-left: 90px;
+  color: $text-color;
+  padding-bottom: $gutter-xs;
+  border-bottom: #00000000 solid 2px;
+  font-size: 40px;
+  &:hover {
+    color: $primary-color;
+    border-bottom: $primary-color solid 2px;
+    transition: color 0.3s, border-bottom 0.3s;
+  }
+  &:first-child {
+    margin-left: 0px;
+  }
+}

@@ -1,0 +1,95 @@
+.p-profile {
+  @include screen-sp {
+    flex-direction: column;
+  }
+  &__image {
+    @include screen-pc {
+      margin-left: 10%;
+    }
+  }
+  &__text {
+    @include screen-pc {
+      margin-right: 10%;
+      margin-left: 3%;
+    }
+  }
+}
+
+.p-profile-image {
+  @include screen-pc {
+    width: 35%;
+    object-fit: cover;
+    border-radius: 50px;
+  }
+  @include screen-sp {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50px;
+  }
+}
+
+.p-profile-text {
+  @include screen-pc {
+    width: 100%;
+  }
+  &__name {
+    font-family: "ヒラギノ明朝 ProN";
+    @include screen-pc {
+      font-size: 56px;
+    }
+    @include screen-sp {
+      font-size: $font-size-xl;
+      font-weight: 300;
+      margin: $gutter-xl 0px;
+    }
+  }
+  &__main {
+    @include screen-pc {
+      line-height: 3;
+      font-weight: 100;
+    }
+    @include screen-sp {
+      line-height: 1.5;
+      font-weight: 100;
+    }
+  }
+}
+
+.p-profile-contact {
+  @include screen-pc {
+    width: 100%;
+    height: 400px;
+    background-color: white;
+  }
+  @include screen-sp {
+    display: none;
+  }
+}
+
+.p-profile__contact {
+  padding: 0 20%;
+  font-size: 24px;
+  letter-spacing: 5px;
+}
+
+.p-profile-contact__button {
+  width: 100%;
+  border: 1px solid $primary-color;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.p-profile-contact__text {
+  color: $primary-color;
+}
+
+.p-lesson-contact {
+  margin-left: calc(((100vw - 100%) / 2) * -1);
+  margin-right: calc(((100vw - 100%) / 2) * -1);
+  height: 400px;
+  background-color: white;
+}
+
+.p-profile-sp_px {
+  padding: 0 $gutter-xs;
+}

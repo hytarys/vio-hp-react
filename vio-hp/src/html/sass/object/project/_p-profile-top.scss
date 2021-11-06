@@ -1,0 +1,151 @@
+.p-profile-container {
+  display: none;
+  grid-area: profile;
+  align-items: center;
+  @include screen-pc {
+    grid-template-rows: minmax(0, 900px);
+    grid-template-columns: 1fr 1fr;
+    margin: 0 10%;
+    grid-template-areas: 
+    "text image";
+  }
+  @include screen-sp {
+    grid-template-rows: auto;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "text";
+  }
+}
+
+.p-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: 
+  "profile"
+  "lesson";
+}
+
+.p-profile-top {
+  &__sp {
+    @include screen-sp{
+      padding-top: 48px;
+    }
+  }
+
+  // トップページのプロフィールのテキスト部分
+  &-text {
+    @include screen-pc {
+      background-color: white;
+      border: 2px solid $primary-color;
+      border-radius: 150px;
+      padding: 96px 0 ;
+      grid-area: text;
+      animation-name: fade-profile-text-down;
+      animation-duration: 4s;
+      animation-iteration-count: initial;
+      z-index: 10;
+    }
+    @include screen-sp {
+      border: 1px solid $primary-color;
+      border-radius: 60px;
+    }
+
+    // フェードインアニメーション(テキスト部分)
+    @keyframes fade-profile-text-down {
+      from {
+        opacity: 0;
+        transform: translateY(-80px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0px);
+      }
+    }
+    &:before {
+      content: "";
+      padding-top: 75%;
+    }
+    &__title {
+      text-align: center;
+      font-weight: 300;
+      font-size: $font-size-title;
+      letter-spacing: 5px;
+      margin: 0;
+      @include screen-sp {
+        font-size: 20px;
+        margin-bottom: 72px;
+      }
+      &_border-bottom {
+        border-bottom: solid 2px $primary-color;
+      }
+    }
+    &__text-body {
+      @include screen-pc {
+        padding: 64px 17%;
+      }
+      @include screen-sp {
+        padding: 0 24px;
+        font-size: 12px;
+      }
+      text-align: center;
+      line-height: 2.5;
+    }
+    &__button {
+      @include screen-sp {
+        margin-bottom: 24px;
+        margin-top: 40px;
+      }
+      &_text {
+        cursor: pointer;
+        color: $primary-color;
+        letter-spacing: 5px;
+        @include screen-pc {
+          font-size: $font-size-button;
+          padding: 16px 32px 16px 32px;
+          border: 2px solid $primary-color;
+        }
+        @include screen-sp {
+          font-size: 12px;
+          padding: 14px 50px;
+          border: 1px solid $primary-color;
+        }
+        border-radius: 10px;
+        &:hover {
+          background-color: $primary-color;
+          color: white;
+        }
+      }
+    }
+  }
+
+  // トップページのプロフィールの画像部分
+  &-image {
+    @include screen-pc {
+      grid-area: image;
+      width: 110%;
+      border-radius: 120px;
+      z-index: 30;
+      margin-left: -10%;
+      border: 2px solid $primary-color;
+      animation-name: fade-profile-image-slide;
+      animation-duration: 4s;
+      animation-iteration-count: initial;
+    }
+    @include screen-sp {
+      display: none;
+    }
+
+    // フェードインアニメーション(画像部分)
+    @keyframes fade-profile-image-slide {
+      from {
+        opacity: 0;
+        transform: translateX(80px);
+      }
+      to {
+        opacity: 1;
+        transform: translateX(0px);
+      }
+    }
+  }
+}
